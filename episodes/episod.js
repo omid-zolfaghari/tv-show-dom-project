@@ -16,7 +16,7 @@ data.forEach(episod =>{
  column.classList.add("col-sm-6", "col-md-3");
  const card = document.createElement("div");
  card.classList.add("card-body", "bg-dark", "my-4");
- card.style.minHeight = "300px";
+ card.style.minHeight = "270px";
  card.style.width = "250px"
  const image = document.createElement("img");
  image.setAttribute("src", episod.image.medium);
@@ -30,7 +30,7 @@ data.forEach(episod =>{
  const box = document.createElement("div");
  box.classList.add("d-flex", "w-100", "bg-dark", "box");
  const aEle = document.createElement("a");
- aEle.classList.add("display-5", "mt-5", "bg-dark");
+ aEle.classList.add("display-5", "mt-5", "bg-dark", "w-25");
  aEle.setAttribute("href", episod.url)
  aEle.append(icon)
  box.append(pEle, aEle)
@@ -68,7 +68,7 @@ const pElements = document.querySelectorAll(".name-of-episod")
 selection.addEventListener("change", (e)=>{
 pElements.forEach(pEl=>{
     if(! (e.target.value === pEl.textContent)){
-        pEl.parentElement.parentElement.style.display = "none"
+        pEl.parentElement.parentElement.style.display = "none";
     }else{
         pEl.parentElement.parentElement.style.display = "block"
     }
