@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(46, 46, 59);
+}
+
+nav{
+    height: 100vh;
+    margin-left: 20px;
+    position: fixed;
+    /* background-color: aliceblue; */
+}
+
+
+
+@media screen and (max-width : 800px){
+    nav{
+        width: 200px;
+        height: 4rem;
+        position: static;
+    }
+}
+
+.name{
+    margin-right: 10px;
+}
+
+input{
+    width: 250px;
+}
+
+.background{
+    width: 100%;
+    background-image: url("../game\ of\ thrones.png");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    
+}
+
