@@ -69,6 +69,8 @@ selection.addEventListener("change", (e)=>{
 pElements.forEach(pEl=>{
     if(! (e.target.value === pEl.textContent)){
         pEl.parentElement.parentElement.style.display = "none"
+    }else{
+        pEl.parentElement.parentElement.style.display = "block"
     }
 
     if(e.target.value === "All Episodes"){
