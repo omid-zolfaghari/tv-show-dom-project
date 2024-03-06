@@ -1,4 +1,4 @@
-import { getData } from "../utiles/storage.js";
+import { getData } from "./utiles/storage.js";
 
 async function episodes (){
  const movie = getData("id");
@@ -52,7 +52,7 @@ card.appendChild(summary);
 pEle.addEventListener("mouseenter", ()=>{
     card.style.position = "relative"
     summary.classList.remove("d-none");
-    summary.classList.add("d-block", "position-absolute", "top-50", "w-75")
+    summary.classList.add("d-block", "position-absolute", "top-0", "w-75")
 })
 
 pEle.addEventListener("mouseleave", ()=>{
