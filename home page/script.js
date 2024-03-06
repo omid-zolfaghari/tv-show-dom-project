@@ -53,7 +53,7 @@ const movies = async(names, row)=>{
     card.addEventListener("click", ()=>{
        console.log(data.id);
         setData(data.id);
-        location.replace("./episod.html/")
+        location.replace("./episod.html")
     })
 } 
 movies("game of thrones", row1);
