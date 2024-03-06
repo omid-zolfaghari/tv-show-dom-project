@@ -50,7 +50,7 @@ const movies = async(names, row)=>{
     card.append(image, title, rate, genre)
     row.appendChild(col3)
     
-    console.log(window.location.href + "/episod.html/");
+    // console.log(window.location.href + "/episod.html/");
     card.addEventListener("click", ()=>{
        console.log(data.id);
         setData(data.id);
