@@ -1,6 +1,6 @@
 import { setData, getData } from "../utiles/storage.js";
 
-const container = document.querySelector(".container")
+const container = document.querySelector(".par")
 const row1 = document.createElement("div");
 row1.classList.add("row", "my-5")
 const row2 = document.createElement("div");
@@ -50,10 +50,11 @@ const movies = async(names, row)=>{
     card.append(image, title, rate, genre)
     row.appendChild(col3)
     
+    console.log(window.location.href + "/episod.html/");
     card.addEventListener("click", ()=>{
        console.log(data.id);
         setData(data.id);
-        window.location.replace("/episod.html")
+        window.location.replace("./episod.html/")
     })
 } 
 movies("game of thrones", row1);
