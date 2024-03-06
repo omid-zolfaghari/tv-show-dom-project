@@ -18,7 +18,8 @@ const movies = async(names, row)=>{
     const col3 = document.createElement("div");
     col3.classList.add("col-12", "col-md-6","col-lg-3", "mt-3");
     const card = document.createElement("div");
-    card.style.cursor = "pointer"
+    card.style.cursor = "pointer";
+    card.style.width = "300px"
     card.classList.add("card-body")
     col3.append(card);
 
