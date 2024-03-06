@@ -1,6 +1,6 @@
 import { setData, getData } from "../utiles/storage.js";
 
-const container = document.querySelector(".container")
+const container = document.querySelector(".par")
 const row1 = document.createElement("div");
 row1.classList.add("row", "my-5")
 const row2 = document.createElement("div");
@@ -16,7 +16,7 @@ const movies = async(names, row)=>{
     const data = await res.json();
     console.log(data);
     const col3 = document.createElement("div");
-    col3.classList.add("col-sm-6","col-lg-3", "mt-3");
+    col3.classList.add("col-12", "col-md-6","col-lg-3", "mt-3");
     const card = document.createElement("div");
     card.style.cursor = "pointer"
     card.classList.add("card-body")
@@ -53,7 +53,7 @@ const movies = async(names, row)=>{
     card.addEventListener("click", ()=>{
        console.log(data.id);
         setData(data.id);
-        window.location.replace("/episod.html")
+        location.replace("./episod.html")
     })
 } 
 movies("game of thrones", row1);

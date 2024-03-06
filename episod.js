@@ -1,9 +1,9 @@
-import { getData } from "../utiles/storage.js";
+import { getData } from "./utiles/storage.js";
 
 async function episodes (){
  const movie = getData("id");
 
- const containerDiv = document.querySelector(".container")
+ const containerDiv = document.querySelector(".container");
  const rowDiv = document.createElement("div");
  rowDiv.classList.add("row", "d-flex", "flex-wrap")
  containerDiv.appendChild(rowDiv)
@@ -13,7 +13,7 @@ async function episodes (){
  console.log(data);
 data.forEach(episod =>{
  const column = document.createElement("div");
- column.classList.add("col-sm-6", "col-md-3");
+ column.classList.add("col-12", "col-md-6","col-lg-3");
  const card = document.createElement("div");
  card.classList.add("card-body", "bg-dark", "my-4");
  card.style.minHeight = "270px";
@@ -52,7 +52,7 @@ card.appendChild(summary);
 pEle.addEventListener("mouseenter", ()=>{
     card.style.position = "relative"
     summary.classList.remove("d-none");
-    summary.classList.add("d-block", "position-absolute", "top-50", "w-75")
+    summary.classList.add("d-block", "position-absolute", "top-0", "w-75")
 })
 
 pEle.addEventListener("mouseleave", ()=>{

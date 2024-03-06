@@ -19,6 +19,9 @@ nav{
     }
 }
 
+
+
+
 .selection{
     width: 300px;
     height: 40px;
@@ -30,5 +33,5 @@ nav{
 }
 
 select{
-    width: 300px;
+    width: 250px;
 }
