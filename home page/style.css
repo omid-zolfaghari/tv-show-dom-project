@@ -19,6 +19,8 @@ nav{
         width: 200px;
         height: 4rem;
         position: static;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
